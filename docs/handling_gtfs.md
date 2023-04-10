@@ -24,7 +24,7 @@ routes, stops, stop_times, trips, shapes = gtfs.import_gtfs(static-gtfs-filepath
 historical real time is retrieved by a get request to the koda API, where fields *operator*, *feed* and *date* are passed.
 
 The main difference between querying historical rt and historical static from KoDa is that it can take time (1 till 60 mn):
->*"7-zip archives are not created automatically, but are instead created on-demand. The file will be created upon the first request. This request, and all other requests for the file will it’s being created, will receive an HTTP 202 Accepted response. If you receive this response, you can poll the URL every 30 seconds until you receive an HTTP 200 response along with the actual data. If someone else already requested the file earlier, you might be able to download the file immediately."*
+>*"7-zip archives are not created automatically, but are instead created on-demand. The file will be created upon the first request. This request, and all other requests for the file will it’s being created, will receive an HTTP 202 Accepted response. If you receive this response, you can poll the URL every 30 seconds until you receive an HTTP 200 response along with the actual data. If someone else already requested the file earlier, you might be able to download the file immediately."* - https://www.trafiklab.se/api/trafiklab-apis/koda/historical-data/
 
 Then, GTFS real time is formated way differently from GTFS static.
 
