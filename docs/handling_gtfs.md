@@ -1,4 +1,4 @@
-# Handling GTFS for retrieving Swedish regional transportation trafic data with python.
+# Handling GTFS for retrieving Swedish regional transportation trafic historical data with python.
 
 The KoDa API provides two main historical datasets: historical static and histrorical real-time
 
